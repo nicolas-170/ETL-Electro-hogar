@@ -17,7 +17,7 @@ func RunCustomerProcess(ctx context.Context, db *sql.DB, cfg *config.Database) e
 	parser := NewCSVParser(csvPath)
 
 	// Orquestar caso de uso
-	etl := application.NewCrearCliente(repo, parser)
+	etl := application.NewCreateCustomer(repo, parser)
 
 	// Ejecutar y retornar resultado
 	return etl.Execute(ctx)

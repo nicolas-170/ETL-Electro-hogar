@@ -10,21 +10,21 @@ import (
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/customer/domain/repository"
 )
 
-// CrearCliente orquesta el proceso ETL para los clientes
-type CrearCliente struct {
+// CreateCustomer orquesta el proceso ETL para los clientes
+type CreateCustomer struct {
 	repo      repository.CustomerRepository
 	csvParser repository.CSVParser
 }
 
-func NewCrearCliente(repo repository.CustomerRepository, parser repository.CSVParser) *CrearCliente {
-	return &CrearCliente{
+func NewCreateCustomer(repo repository.CustomerRepository, parser repository.CSVParser) *CreateCustomer {
+	return &CreateCustomer{
 		repo:      repo,
 		csvParser: parser,
 	}
 }
 
 // Execute ejecuta el proceso ETL
-func (u *CrearCliente) Execute(ctx context.Context) error {
+func (u *CreateCustomer) Execute(ctx context.Context) error {
 	log.Println("Extrayendo datos del CSV...")
 	customers, err := u.csvParser.Parse()
 	if err != nil {
@@ -62,18 +62,18 @@ func (u *CrearCliente) Execute(ctx context.Context) error {
 	return nil
 }
 
-func (u *CrearCliente) Transform(customer *domain.Customer) {
+func (u *CreateCustomer) Transform(customer *domain.Customer) {
 	customer.Nombre = strings.TrimSpace(customer.Nombre)
 	customer.Ciudad = u.normalizeCity(customer.Ciudad)
 	customer.Sexo = u.normalizeGender(customer.Sexo)
 }
 
-func (u *CrearCliente) Load(customer domain.Customer, ctx context.Context) error {
+func (u *CreateCustomer) Load(customer domain.Customer, ctx context.Context) error {
 	return u.repo.Save(ctx, customer)
 }
 
 // normalizeCity maneja variaciones en el nombre de las ciudades
-func (u *CrearCliente) normalizeCity(city string) string {
+func (u *CreateCustomer) normalizeCity(city string) string {
 	city = strings.TrimSpace(city)
 	if city == "NULL" || city == "" {
 		return "Desconocida"
@@ -84,7 +84,7 @@ func (u *CrearCliente) normalizeCity(city string) string {
 }
 
 // normalizeGender limpia el campo sexo (e.g. "M " -> "M")
-func (u *CrearCliente) normalizeGender(gender string) string {
+func (u *CreateCustomer) normalizeGender(gender string) string {
 	gender = strings.TrimSpace(gender)
 	if len(gender) > 1 {
 		return gender[0:1]
