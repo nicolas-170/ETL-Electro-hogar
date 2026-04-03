@@ -8,9 +8,10 @@ import (
 	"github.com/joho/godotenv"
 )
 
+// Config agrupa todas las configuraciones de la aplicación
 type Config struct {
-	App      App
-	Database Database
+	App      App      // Configuración general de la aplicación
+	Database Database // Configuración de conexión a base de datos
 }
 
 type App struct {	

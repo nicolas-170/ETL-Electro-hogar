@@ -1,6 +1,6 @@
 package domain
 
-// Customer defines the domain model for a client in the ETL process
+// Cliente define el modelo de dominio para un cliente en el proceso ETL
 type Customer struct {
 	ID       string `json:"id"`
 	Nombre   string `json:"nombre"`

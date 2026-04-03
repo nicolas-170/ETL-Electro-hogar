@@ -11,7 +11,7 @@ import (
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/customer/domain"
 )
 
-// CSVParser handles extraction of customer data from CSV files
+// CSVParser maneja la extracción de datos de clientes desde archivos CSV
 type CSVParser struct {
 	filePath string
 }
@@ -20,7 +20,7 @@ func NewCSVParser(filePath string) *CSVParser {
 	return &CSVParser{filePath: filePath}
 }
 
-// Parse reads the CSV and returns a slice of Customers
+// Parse lee el CSV y retorna una lista de Clientes
 func (p *CSVParser) Parse() ([]domain.Customer, error) {
 	file, err := os.Open(p.filePath)
 	if err != nil {

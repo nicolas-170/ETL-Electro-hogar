@@ -10,7 +10,7 @@ import (
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/customer/domain/repository"
 )
 
-// CrearCliente orchestrates the ETL process for customers
+// CrearCliente orquesta el proceso ETL para los clientes
 type CrearCliente struct {
 	repo      repository.CustomerRepository
 	csvParser repository.CSVParser
@@ -23,7 +23,7 @@ func NewCrearCliente(repo repository.CustomerRepository, parser repository.CSVPa
 	}
 }
 
-// Execute runs the ETL process
+// Execute ejecuta el proceso ETL
 func (u *CrearCliente) Execute(ctx context.Context) error {
 	log.Println("Extrayendo datos del CSV...")
 	customers, err := u.csvParser.Parse()
