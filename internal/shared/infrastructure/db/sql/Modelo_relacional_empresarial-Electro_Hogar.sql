@@ -5,7 +5,7 @@
 CREATE TABLE CLIENTE (
     id_cliente     VARCHAR(40)     PRIMARY KEY,
     nombre         VARCHAR(150)    NOT NULL,
-    email          VARCHAR(200)    UNIQUE,
+    email          VARCHAR(200),
     telefono       VARCHAR(20),
     segmento       VARCHAR(50),
     ciudad         VARCHAR(100),
@@ -16,7 +16,7 @@ CREATE TABLE CLIENTE (
 COMMENT ON TABLE CLIENTE IS 'Dimensión que almacena los datos demográficos y de segmentación de cada cliente';
 COMMENT ON COLUMN CLIENTE.id_cliente  IS 'Identificador único del cliente (UUID)';
 COMMENT ON COLUMN CLIENTE.nombre      IS 'Nombre completo del cliente';
-COMMENT ON COLUMN CLIENTE.email       IS 'Correo electrónico de contacto, debe ser único';
+COMMENT ON COLUMN CLIENTE.email       IS 'Correo electrónico de contacto';
 COMMENT ON COLUMN CLIENTE.telefono    IS 'Número de teléfono principal del cliente';
 COMMENT ON COLUMN CLIENTE.segmento    IS 'Segmento comercial al que pertenece (ej: Premium, Estándar)';
 COMMENT ON COLUMN CLIENTE.ciudad      IS 'Ciudad de residencia del cliente';

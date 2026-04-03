@@ -21,7 +21,6 @@ func NewPostgresCustomerRepository(db *sql.DB, configDb *config.Database) *Postg
 func (r *PostgresCustomerRepository) Save(ctx context.Context, c domain.Customer) error {
 	// Llamada al procedimiento almacenado
 	query := fmt.Sprintf(`CALL %s.insertar_cliente($1, $2, $3, $4, $5, $6, $7)`, r.configDb.Schema)
-
 	_, err := r.db.ExecContext(ctx,
 		query,
 		c.Nombre,

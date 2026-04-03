@@ -28,8 +28,10 @@ Antes de ejecutar la aplicación, **es obligatorio** preparar el esquema de la b
 
 > [!IMPORTANT]
 > **Scripts de Base de Datos**:
-> *   [Sc-crear_tablas.sql](internal/shared/infrastructure/db/sql/Sc-crear_tablas.sql)
-> *   [Pr-insertar_cliente.sql](internal/shared/infrastructure/db/sql/Pr-insertar_cliente.sql)
+> *   **Shared (Modelo Global)**: [Modelo_relacional_empresarial-Electro_Hogar.sql](internal/shared/infrastructure/db/sql/Modelo_relacional_empresarial-Electro_Hogar.sql)
+> *   **Customer Module (Módulo Cliente)**:
+>     *   [Pr-insertar_cliente.sql](internal/customer/infrastructure/sql/Pr-insertar_cliente.sql) (requiere especificar `<DB_SCHEMA>`)
+>     *   [Pr-insertar_cliente-example.sql](internal/customer/infrastructure/sql/Pr-insertar_cliente-example.sql) (ejemplo documentado con `electro_hogar`)
 >
 > **Permisos de Ejecución**:
 > Para que la aplicación pueda consumir el procedimiento, debes otorgar permisos de ejecución con el siguiente comando:
@@ -76,7 +78,8 @@ La aplicación se configura mediante un archivo de variables de entorno `.dev.en
 *   `internal/customer/domain/`: Reglas de negocio y entidades de cliente.
 *   `internal/customer/application/`: Casos de uso (Orquestación del ETL).
 *   `internal/customer/infrastructure/`: Implementaciones técnicas (SQL Repo, CSV Parser).
-*   `internal/shared/infrastructure/db/`: Configuración global y scripts de base de datos.
+*   `internal/customer/infrastructure/sql/`: Procedimientos almacenados específicos del módulo Cliente.
+*   `internal/shared/infrastructure/db/`: Configuración global y scripts compartidos de base de datos.
 *   `data/`: Contiene los archivos fuente para el proceso de extracción.
 
 ---
