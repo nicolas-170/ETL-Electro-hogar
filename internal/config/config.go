@@ -24,6 +24,7 @@ type Database struct {
 	User     string
 	Password string
 	Name     string
+	Schema   string
 }
 
 func LoadConfig() *Config {
@@ -38,6 +39,7 @@ func LoadConfig() *Config {
 			User:     os.Getenv("DB_USER"),
 			Password: os.Getenv("DB_PASSWORD"),
 			Name:     os.Getenv("DB_NAME"),
+			Schema:   os.Getenv("DB_SCHEMA"),
 		},
 	}
 }

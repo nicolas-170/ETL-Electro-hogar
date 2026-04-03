@@ -28,7 +28,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), *cfg.App.Timeout)
 	defer cancel()
 
-	if err := infrastructure.RunCustomerProcess(ctx, db); err != nil {
+	if err := infrastructure.RunCustomerProcess(ctx, db, &cfg.Database); err != nil {
 		log.Fatalf("Falla crítica en el proceso ETL de Clientes: %v", err)
 	}
 

@@ -27,9 +27,17 @@ El flujo de datos sigue el estándar industrial de tres fases:
 Antes de ejecutar la aplicación, **es obligatorio** preparar el esquema de la base de datos ejecutando el siguiente script SQL. Este script crea el procedimiento almacenado necesario para la inserción de clientes.
 
 > [!IMPORTANT]
-> **Script de Base de Datos**:
+> **Scripts de Base de Datos**:
 > *   [Sc-crear_tablas.sql](internal/shared/infrastructure/db/sql/Sc-crear_tablas.sql)
 > *   [Pr-insertar_cliente.sql](internal/shared/infrastructure/db/sql/Pr-insertar_cliente.sql)
+>
+> **Permisos de Ejecución**:
+> Para que la aplicación pueda consumir el procedimiento, debes otorgar permisos de ejecución con el siguiente comando:
+> ```sql
+> GRANT EXECUTE ON PROCEDURE <DB_SCHEMA>.insertar_cliente(
+>     VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, CHAR, SMALLINT
+> ) TO <DB_SCHEMA>;
+> ```
 
 ---
 
@@ -44,6 +52,7 @@ La aplicación se configura mediante un archivo de variables de entorno `.dev.en
 | `DB_USER` | Usuario de base de datos | `postgres` |
 | `DB_PASSWORD` | Contraseña del usuario | `******` |
 | `DB_NAME` | Nombre de la base de datos | `electro_hogar` |
+| `DB_SCHEMA` | Esquema del almacén de datos | `electro_hogar` |
 
 ---
 

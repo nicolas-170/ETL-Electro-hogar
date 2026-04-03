@@ -5,20 +5,22 @@ import (
 	"database/sql"
 	"fmt"
 
+	"github.com/nicolas-170/ETL-Electro-hogar/internal/config"
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/customer/domain"
 )
 
 type PostgresCustomerRepository struct {
-	db *sql.DB
+	db       *sql.DB
+	configDb *config.Database
 }
 
-func NewPostgresCustomerRepository(db *sql.DB) *PostgresCustomerRepository {
-	return &PostgresCustomerRepository{db: db}
+func NewPostgresCustomerRepository(db *sql.DB, configDb *config.Database) *PostgresCustomerRepository {
+	return &PostgresCustomerRepository{db: db, configDb: configDb}
 }
 
 func (r *PostgresCustomerRepository) Save(ctx context.Context, c domain.Customer) error {
 	// Llamada al procedimiento almacenado
-	query := `CALL insertar_cliente($1, $2, $3, $4, $5, $6, $7)`
+	query := fmt.Sprintf(`CALL %s.insertar_cliente($1, $2, $3, $4, $5, $6, $7)`, r.configDb.Schema)
 
 	_, err := r.db.ExecContext(ctx,
 		query,
