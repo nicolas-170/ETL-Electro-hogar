@@ -1,0 +1,255 @@
+﻿idCliente;Nombre;Email;Telefono;Segmento;Ciudad;Sexo;Edad
+1101;Javier Ignacio Torres;javier.torres@mailficticio.com;57900000001;PyME;Bogotá;"M ";73
+1102;Andres Felipe Herrera;andres.herrera@mailficticio.com;57900000002;Retail;Bogotá;"M ";29
+1103;Ricardo Jose Vargas;ricardo.vargas@mailficticio.com;57900000003;VIP;Bogotá;"M ";29
+1104;Miguel Rangel Castro;miguel.castro@mailficticio.com;57900000004;PyME;Cartagena;"M ";56
+1105;Fernando Luis Soto;fernando.soto@mailficticio.com;57900000005;Retail;Manizales;"M ";60
+1106;Daniel Esteban Rico;daniel.rico@mailficticio.com;57900000006;VIP;MEDELLIN;"M ";35
+1107;Pablo Emilio Bernal;pablo.bernal@mailficticio.com;57900000007;PyME;Bogotá;"M ";28
+1108;Juan Camilo Rueda;juan.rueda@mailficticio.com;57900000008;Retail;Bucaramanga;"M ";72
+1109;Mario Alberto Cruz;mario.cruz@mailficticio.com;57900000009;VIP;Cúcuta;"M ";43
+1110;Diego Alejandro Gil;diego.gil@mailficticio.com;57900000010;PyME;Cúcuta;"M ";52
+1111;Sebastian Nicolas Pedraza;sebastian.pena@mailficticio.com;;Retail;Cartagena;"M ";72
+1112;Alejandro Martin Rojas;alejandro.rojas@mailficticio.com;57900000012;VIP;Bogotá;"M ";25
+1113;Gabriel Antonio Ruiz;gabriel.ruiz@mailficticio.com;57900000013;PyME;BUCARAMANGA;"M ";52
+1114;Nicolas Mateo Perez;nicolas.perez@mailficticio.com;57900000014;Retail;Bogotá;"M ";50
+1115;Carlos Manuel Velez;carlos.velez@mailficticio.com;57900000015;VIP;Bogotá;"M ";66
+1116;Luis Alberto Mendoza;luis.mendoza@mailficticio.com;57900000016;PyME;Bogotá;"M ";75
+1117;David Jose Lopez;david.lopez@mailficticio.com;57900000017;Retail;Bogotá;"M ";66
+1118;Martin Agustin Diaz;matias.diaz@mailficticio.com;;VIP;Ibagué;"M ";34
+1119;Hugo Cesar Ocampo;hugo.ocampo@mailficticio.com;57900000019;PyME;Ibagué;"M ";45
+1120;Rafael Eduardo Rios;rafael.rios@mailficticio.com;57900000020;Retail;Ibagué;"M ";26
+1121;Emmanuel Vicente Rivas;emmanuel.rivas@mailficticio.com;57900000021;VIP;CARTAGENA;"M ";56
+1122;;german.sierra@mailficticio.com;57900000022;PyME;Manizales;"M ";70
+1123;Alonso Jesus Bernal;alonso.bernal@mailficticio.com;;Retail;Bogotá;"M ";49
+1124;Eduardo Luis Salas;eduardo.salas@mailficticio.com;57900000024;VIP;Manizales;"M ";58
+1125;Victor Hugo Zapata;victor.zapata@mailficticio.com;57900000025;PyME;Manizales;"M ";46
+1126;Samuel Andres Gil;samuel.gil@mailficticio.com;57900000026;Retail;Bogotá;"M ";29
+1127;Cristian David Toro;cristian.toro@mailficticio.com;57900000027;VIP;Manizales;"M ";65
+1128;Antonio Javier Cruz;antonio.cruz@mailficticio.com;57900000028;PyME;Ibagué;"M ";20
+1129;Fabian Ricardo Orozco;fabian.orozco@mailficticio.com;57900000029;Retail;Ibagué;"M ";36
+1130;Felipe Santiago Acosta;felipe.acosta@mailficticio.com;57900000030;VIP;Manizales;"M ";26
+1131;Sofia Alejandra Gomez;sofia.gomez@mailficticio.com;57900000031;PyME;Manizales;"F ";35
+1132;Valentina Paz Rojas;valentinapaz.rojas@mailficticio.com;57900000032;Retail;Cali;"F ";58
+1133;Maria Fernanda Lopez;maria.lopez@mailficticio.com;57900000033;VIP;Cartagena;"F ";43
+1134;Laura Cristina Peña;laura.pena@mailficticio.com;57900000034;PyME;Cúcuta;"F ";62
+1135;;ana.mendoza@mailficticio.com;57900000035;Retail;Manizales;"F ";51
+1136;Isabella Elena Diaz;isabella.diaz@mailficticio.com;57900000036;VIP;Cúcuta;"F ";61
+1137;Camila Andrea Rios;camila.rios@mailficticio.com;57900000037;PyME;Bogotá;"F ";45
+1138;Daniela Pilar Velez;daniela.velez@mailficticio.com;57900000038;Retail;Cúcuta;"F ";54
+1139;Natalia Isabel Ortiz;natalia.ortiz@mailficticio.com;57900000039;VIP;NULL;"F ";64
+1140;Gabriela Carolina Luna;gabriela.luna@mailficticio.com;57900000040;PyME;Bogotá;"F ";32
+1141;Mariana Josefina Vargas;mariana.vargas@mailficticio.com;57900000041;Retail;Cúcuta;"F ";29
+1142;Valeria Sofia Castro;valeria.castro@mailficticio.com;57900000042;VIP;Bogotá;"F ";38
+1143;Emilia Teresa Blanco;emilia.blanco@mailficticio.com;57900000043;PyME;Cúcuta;"F ";34
+1144;Julieta  Soto;julieta.soto@mailficticio.com;57900000044;Retail;Cúcuta;"F ";68
+1145;Alicia Victoria Rueda;alicia.rueda@mailficticio.com;57900000045;VIP;Bogotá;"F ";71
+1146;Elena Carolina Cruz;elena.cruz@mailficticio.com;57900000046;PyME;Medellín;"F ";52
+1147;Lucia Fernanda Gil;lucia.gil@mailficticio.com;57900000047;Retail;Bogotá;"F ";36
+1148;Catalina Paz Sierra;catalina.sierra@mailficticio.com;57900000048;VIP;Medellín;"F ";31
+1149;Manuela Alejandra Perez;manuela.perez@mailficticio.com;57900000049;PyME;CALI;"F ";55
+1150;Sara Marcela Velez;sara.velez@mailficticio.com;57900000050;Retail;Medellín;"F ";39
+1151;Ximena Lucia Pinto;ximena.pinto@mailficticio.com;57900000051;VIP;Medellín;"F ";36
+1152;Paula Andrea Vargas;paula.vargas@mailficticio.com;57900000052;PyME;Medellín;"F ";19
+1153;Veronica Daniela Rojas;veronica.rojas@mailficticio.com;57900000053;Retail;Medellín;"F ";62
+1154;Renata Isabel G├│mez;renata.gomez@mailficticio.com;57900000054;VIP;Cali;"F ";18
+1155;Beny Sofia Herrera;belen.herrera@mailficticio.com;57900000055;PyME;Cali;"F ";20
+1156;Celeste Victoria Rico;celeste.rico@mailficticio.com;57900000056;Retail;CALI;"F ";70
+1157;Alejandra Soledad Bernal;alejandra.bernal@mailficticio.com;57900000057;VIP;Medellín;"F ";65
+1158;Guadalupe Torres;guadalupe.torres@mailficticio.com;57900000058;PyME;Bogotá;"F ";48
+1159;Olivia Fernanda Acosta;olivia.acosta@mailficticio.com;57900000059;Retail;Bogotá;"F ";56
+1160;Paula Andrea Lopez;paula.lopez@mailficticio.com;57900000060;VIP;Bogotá;"F ";63
+1161;Laura Catalina Gil;laura.gil@mailficticio.com;57900000061;PyME;Manizales;"F ";60
+1162;Silvia Lorena Abril;silvia.nunez@mailficticio.com;57900000062;Retail;Manizales;"F ";41
+1163;Regina Isabel Cruz;regina.cruz@mailficticio.com;57900000063;VIP;Cartagena;"F ";48
+1164;Clara Sofia Torres;clara.torres@mailficticio.com;57900000064;PyME;Manizales;"F ";73
+1165;Viviana Marcela Pardo;viviana.pardo@mailficticio.com;57900000065;Retail;Bogotá;"F ";43
+1166;Ana Milena Marin;angelica.velez@mailficticio.com;57900000066;VIP;Bogotá;"F ";72
+1167;Adriana Patricia Salas;adriana.salas@mailficticio.com;57900000067;PyME;Bogotá;"F ";75
+1168;Monica Alejandra Latorre;monica.latorre@mailficticio.com;57900000068;Retail;Bogotá;"F ";56
+1169;Erika Milena Herrera;erika.herrera@mailficticio.com;57900000069;VIP;" CALI";"F ";19
+1170;Andrea Cecilia Rivas;andrea.rivas@mailficticio.com;57900000070;PyME;Bogotá;"F ";67
+1171;Liliana Patricia Mesa;liliana.mesa@mailficticio.com;57900000071;Retail;Cúcuta;"F ";24
+1172;Jimena Carolina Sierra;jimena.sierra@mailficticio.com;57900000072;VIP;Cali;"F ";45
+1173;Sandra Milena Ospina;sandra.ospina@mailficticio.com;57900000073;PyME;Medellín;"F ";52
+1174;Giselle Renata Zapata;giselle.zapata@mailficticio.com;57900000074;Retail;Pereira;"F ";59
+1175;Diana Carolina C├írdenas;diana.cardenas@mailficticio.com;57900000075;VIP;Pereira;"F ";48
+1176;Elsa Margarita Tellez;elsa.tellez@mailficticio.com;57900000076;PyME;Pereira;"F ";75
+1177;Carolina Isabel Ocampo;carolina.ocampo@mailficticio.com;57900000077;Retail;Manizales;"F ";44
+1178;Josefina Victoria Naranjo;josefina.naranjo@mailficticio.com;57900000078;VIP;Medellín;"F ";35
+1179;Karen Andrea Quintero;karen.quintero@mailficticio.com;57900000079;PyME;Cartagena;"F ";20
+1180;Zulema Raquel Valencia;zulema.valencia@mailficticio.com;57900000080;Retail;Manizales;"F ";51
+1181;Marcela Soledad Marin;marcela.marin@mailficticio.com;57900000081;VIP;Manizales;"F ";60
+1182;Vanessa Julieta Duque;vanessa.duque@mailficticio.com;57900000082;PyME;Cartagena;"F ";52
+1183;Michelle Estefanni Peralta;michelle.pena@mailficticio.com;57900000083;Retail;Manizales;"F ";31
+1184;Susana Lorena Rivera;susana.rivera@mailficticio.com;57900000084;VIP;Manizales;"F ";34
+1185;Fatima Blanco;fatima.blanco@mailficticio.com;57900000085;PyME;" BOGOTA";"F ";22
+1186;Hortensia Piedad Bravo;hortensia.bravo@mailficticio.com;57900000086;Retail;Bogotá;"F ";74
+1187;Ingrid Daniela Orozco;ingrid.orozco@mailficticio.com;57900000087;VIP;Bogotá;"F ";54
+1188;Jennifer Paola Munoz;jennifer.munoz@mailficticio.com;57900000088;PyME;Pereira;"F ";21
+1189;Mario Javier Cuevas;mariojavi@mailficticio.com;57900000089;Retail;Bogotá;"F ";41
+1190;Gonzalo Ramon Flores;gonzalo.flores@mailficticio.com;57900000090;VIP;Bogotá;"M ";72
+1191;Rodrigo Jesus Soto;rodrigo.soto@mailficticio.com;57900000091;PyME;Manizales;"M ";64
+1192;Emilio  Pardo;emilio.pardo@mailficticio.com;57900000092;Retail;Cali;"M ";35
+1193;"      Manuel Lagos";hector.lagos@mailficticio.com;57900000093;VIP;Manizales;"M ";55
+1194;Arturo David Rojas;arturo.rojas@mailficticio.com;57900000094;PyME;Barranquilla;"M ";24
+1195;"   Camilo Diaz";julian.diaz@mailficticio.com;57900000095;Retail;Manizales;"M ";36
+1196;"    Lili Luna";oscar.luna@mailficticio.com;57900000096;VIP;Ibagué;"M ";59
+1197;"  Dario Mora";ruben.suarez@mailficticio.com;57900000097;PyME;Ibagué;"M ";63
+1198;"   Sergio Gil";sergio.gil@mailficticio.com;57900000098;Retail;Manizales;"M ";59
+1199;Mauricio Javier Mesa;mauricio.mesa@mailficticio.com;57900000099;VIP;Ibagué;"M ";24
+1200;Rafael Eduardo R├¡os;rafael.rios@mailficticio.com;57900000100;PyME;Bogotá;"M ";47
+1201;"   Jorge Vargas";jorge.velasquez@mailficticio.com;57900000101;Retail;Barranquilla;"M ";73
+1202;Vicente Alfonso Ochoa;vicente.ochoa@mailficticio.com;57900000102;VIP;Medellín;"M ";30
+1203;Benjamin Rojas;benjamin.vaca@mailficticio.com;57900000103;PyME;" MEDELLIN";"M ";59
+1204;Santiago Sierra;santiago.sierra@mailficticio.com;57900000104;Retail;Manizales;"M ";40
+1205;Alejandro Pinto;alejandro.pinto@mailficticio.com;57900000105;VIP;Pereira;"M ";44
+1206;Pedro Juan Valencia;pedro.valencia@mailficticio.com;57900000106;PyME;Bogotá;"M ";42
+1207;Esteban Daniel Naranjo;esteban.naranjo@mailficticio.com;57900000107;Retail;Manizales;"M ";45
+1208;"   Miguel  Latorre";ivan.latorre@mailficticio.com;57900000108;VIP;Ibagué;"M ";27
+1209;"  Alfredo Mora";alfredo.marquez@mailficticio.com;57900000109;PyME;Pereira;"M ";19
+1210;Camilo Ernesto Blanco;camilo.blanco@mailficticio.com;57900000110;Retail;Medellín;"M ";23
+1211;"    Ricardo Moreno";felix.moreno@mailficticio.com;57900000111;VIP;Manizales;"M ";65
+1212;Gustavo Adolfo Castro;gustavo.castro@mailficticio.com;57900000112;PyME;Bogotá;"M ";69
+1213;Lorenzo Manuel Gil;lorenzo.gil@mailficticio.com;57900000113;Retail;Ibagué;"M ";19
+1214;"   Norberto   Duque";norberto.duque@mailficticio.com;57900000114;VIP;Barranquilla;"M ";45
+1215;" Ramiro Tellez";ramiro.tellez@mailficticio.com;57900000115;PyME;Ibagué;"M ";53
+1216;Simon Pizarro;simon.pizarro@mailficticio.com;57900000116;Retail;Pereira;"M ";29
+1217;"  Dario Quintero";dario.quintero@mailficticio.com;57900000117;VIP;Bogotá;"M ";40
+1218;"     Jaime Marin";jaime.marin@mailficticio.com;57900000118;PyME;Bogotá;"M ";40
+1219;Marco Aurelio Gomez;marco.gomez@mailficticio.com;57900000119;Retail;Bogotá;"M ";18
+1220;Ana Maria Ramirez Rodirguez;anitamari@mailficticio.com;57900000120;VIP;Bogotá;"M ";44
+1221;Jaime  Jimenez;NULL;NULL;VIP;BOGOTA;NULL;28
+1222;Javier Ignacio Torres;javier.torres@mailficticio.com;57900000001;PyME;Bogotá;"M ";36
+1223;"   Andy Felipe Herrera";andres.herrera@mailficticio.com;57900000002;Retail;Bogotá;"M ";57
+1224;Ricardo Jose Vargas;ricardo.vargas@mailficticio.com;57900000003;VIP;Bogotá;"M ";63
+1225;Miguel Angel Castro;miguel.castro@mailficticio.com;57900000004;PyME;Cartagena;"M ";22
+1226;Fernando Luis Soto;fernando.soto@mailficticio.com;57900000005;Retail;Manizales;"M ";22
+1227;Daniel Esteban Rico;daniel.rico@mailficticio.com;57900000006;VIP;Medellín;"M ";69
+1228;Pablo Emilio Bernal;pablo.bernal@mailficticio.com;57900000007;PyME;Bogotá;"M ";37
+1229;Juan Camilo Rueda;juan.rueda@mailficticio.com;57900000008;Retail;Bucaramanga;"M ";66
+1230;Mario Alberto Cruz;mario.cruz@mailficticio.com;57900000009;VIP;CUCUTA;"M ";53
+1231;Diego Alejandro Gil;diego.gil@mailficticio.com;57900000010;PyME;Cúcuta;"M ";45
+1232;"  Sebastian Suarez";sebastian.pena@mailficticio.com;57900000011;Retail;Cartagena;"M ";65
+1233;Alejandro Martin Rojas;alejandro.rojas@mailficticio.com;57900000012;VIP;Bogotá;"M ";43
+1234;Gabriel Antonio Ruiz;gabriel.ruiz@mailficticio.com;57900000013;PyME;Bucaramanga;"M ";39
+1235;Nicolas Mateo Perez;nicolas.perez@mailficticio.com;57900000014;Retail;Bogotá;"M ";48
+1236;Carlos Manuel Velez;carlos.velez@mailficticio.com;57900000015;VIP;Bogotá;"M ";51
+1237;Luis Alberto Mendoza;luis.mendoza@mailficticio.com;57900000016;PyME;Bogotá;"M ";31
+1238;David Jose Lopez;david.lopez@mailficticio.com;57900000017;Retail;Bogotá;"M ";42
+1239;Mario Marin;matias.diaz@mailficticio.com;57900000018;VIP;Ibagué;"M ";25
+1240;"   Hugo Ocampo";hugo.ocampo@mailficticio.com;57900000019;PyME;Ibagué;"M ";31
+1241;Rafael Eduardo Rios;rafael.rios@mailficticio.com;57900000020;Retail;Ibagué;"M ";57
+1242;Emmanuel Vicente Rivas;emmanuel.rivas@mailficticio.com;57900000021;VIP;Cartagena;"M ";63
+1243;German Sierra;german.sierra@mailficticio.com;57900000022;PyME;Manizales;"M ";73
+1244;Alonso Bernal;alonso.bernal@mailficticio.com;57900000023;Retail;Bogotá;"M ";19
+1245;Eduardo Luis Salas;eduardo.salas@mailficticio.com;57900000024;VIP;Manizales;"M ";41
+1246;Luis Hugo Zapata;victor.zapata@mailficticio.com;57900000025;PyME;Manizales;"M ";60
+1247;Hugo Gomez;samuel.gil@mailficticio.com;57900000026;Retail;BOGOTA;"M ";59
+1248;Cristian David Toro;cristian.toro@mailficticio.com;57900000027;VIP;Manizales;"M ";63
+1249;Antonio Javier Cruz;antonio.cruz@mailficticio.com;57900000028;PyME;Ibagué;"M ";46
+1250;Fabian Ricardo Orozco;fabian.orozco@mailficticio.com;57900000029;Retail;Ibagué;"M ";57
+1251;Felipe Santiago Acosta;felipe.acosta@mailficticio.com;57900000030;VIP;Manizales;"M ";21
+1252;"   Sofia Gomez";sofia.gomez@mailficticio.com;57900000031;PyME;Manizales;"F ";71
+1253;Valentina Paz Rojas;valentinapaz.rojas@mailficticio.com;57900000032;Retail;" CALI";"F ";33
+1254;"   Maria Lopez";maria.lopez@mailficticio.com;57900000033;VIP;Cartagena;"F ";66
+1255;"  Laura  Perez";laura.pena@mailficticio.com;57900000034;PyME;Cúcuta;"F ";48
+1256;Ana Lucia Mendoza;ana.mendoza@mailficticio.com;57900000035;Retail;Manizales;"F ";25
+1257;Isabella Elena Diaz;isabella.diaz@mailficticio.com;57900000036;VIP;Cúcuta;"F ";73
+1258;Camila Andrea Rios;camila.rios@mailficticio.com;57900000037;PyME;Bogotá;"F ";66
+1259;Daniela Pilar Velez;daniela.velez@mailficticio.com;57900000038;Retail;Cúcuta;"F ";38
+1260;Natalia Isabel Ortiz;natalia.ortiz@mailficticio.com;57900000039;VIP;NULL;"F ";58
+1261;Gabriela Carolina Luna;gabriela.luna@mailficticio.com;57900000040;PyME;Bogotá;"F ";47
+1262;Mariana Jose Vargas;mariana.vargas@mailficticio.com;57900000041;Retail;Cúcuta;"F ";27
+1263;" Valeria  Castro";valeria.castro@mailficticio.com;57900000042;VIP;Bogotá;"F ";68
+1264;Emilia Teresa Blanco;emilia.blanco@mailficticio.com;57900000043;PyME;Cúcuta;"F ";28
+1265;"    Julieta  Soto";julieta.soto@mailficticio.com;57900000044;Retail;Cúcuta;"F ";32
+1266;Alicia Victoria Rueda;alicia.rueda@mailficticio.com;57900000045;VIP;Bogotá;"F ";35
+1267;Elena Carolina Cruz;elena.cruz@mailficticio.com;57900000046;PyME;Medellín;"F ";44
+1268;Lucia Fernanda Gil;lucia.gil@mailficticio.com;57900000047;Retail;Bogotá;"F ";36
+1269;Catalina Paz Sierra;catalina.sierra@mailficticio.com;57900000048;VIP;Medellín;"F ";42
+1270;Manuela Alejandra Perez;manuela.perez@mailficticio.com;57900000049;PyME;"  CALI";"F ";42
+1271;Sara Marcela Velez;sara.velez@mailficticio.com;57900000050;Retail;Medellín;"F ";73
+1272;Ximena Lucia Pinto;ximena.pinto@mailficticio.com;57900000051;VIP;Medellín;"F ";41
+1273;Paula Andrea Vargas;paula.vargas@mailficticio.com;57900000052;PyME;Medellín;"F ";56
+1274;"   Veronica  Daniela Rojas";veronica.rojas@mailficticio.com;57900000053;Retail;Medellín;"F ";51
+1275;Renata Isabel Gomez;renata.gomez@mailficticio.com;57900000054;VIP;Cali;"F ";48
+1276;Sofy  Herrera;belen.herrera@mailficticio.com;57900000055;PyME;Cali;"F ";48
+1277;Celeste Victoria Rico;celeste.rico@mailficticio.com;57900000056;Retail;Cali;"F ";19
+1278;Alejandra Soledad Bernal;alejandra.bernal@mailficticio.com;57900000057;VIP;Medellín;"F ";53
+1279;Guadalupe  Torres;guadalupe.torres@mailficticio.com;57900000058;PyME;Bogotá;"F ";56
+1280;Olivia Fernanda Acosta;olivia.acosta@mailficticio.com;57900000059;Retail;Bogotá;"F ";71
+1281;Paula Andrea  Lopez;paula.lopez@mailficticio.com;57900000060;VIP;BOGOTA;"F ";67
+1282;Laura Catalina Gil;laura.gil@mailficticio.com;57900000061;PyME;Manizales;"F ";56
+1283;"  Silvia Lorena  Acosta";silvia.nunez@mailficticio.com;57900000062;Retail;Manizales;"F ";51
+1284;Regina Isabel Cruz;regina.cruz@mailficticio.com;57900000063;VIP;Cartagena;"F ";43
+1285;Clara Sofia Torres;clara.torres@mailficticio.com;57900000064;PyME;Manizales;"F ";29
+1286;Viviana Marcela Pardo;viviana.pardo@mailficticio.com;57900000065;Retail;BOGOTA;"F ";25
+1287;"    Angelica Mora";angelica.velez@mailficticio.com;57900000066;VIP;Bogotá;"F ";34
+1288;Adriana Patricia Salas;adriana.salas@mailficticio.com;57900000067;PyME;Bogotá;"F ";51
+1289;" Monica Alejandra Latorre";monica.latorre@mailficticio.com;57900000068;Retail;Bogotá;"F ";60
+1290;Jessica Milena Herrera;erika.herrera@mailficticio.com;57900000069;VIP;Cali;"F ";21
+1291;Andrea Cecilia Rivas;andrea.rivas@mailficticio.com;57900000070;PyME;BOGOTA;"F ";49
+1292;Liliana Patricia Mesa;liliana.mesa@mailficticio.com;57900000071;Retail;Cúcuta;"F ";28
+1293;Jimena Carolina Sierra;jimena.sierra@mailficticio.com;57900000072;VIP;Cali;"F ";23
+1294;Sandra Milena Ospina;sandra.ospina@mailficticio.com;57900000073;PyME;Medellín;"F ";65
+1295;Giselle Renata Zapata;giselle.zapata@mailficticio.com;57900000074;Retail;Pereira;"F ";49
+1296;Diana Carolina Cardenas;diana.cardenas@mailficticio.com;57900000075;VIP;Pereira;"F ";20
+1297;Elsa Margarita Tellez;elsa.tellez@mailficticio.com;57900000076;PyME;PEREIRA;"F ";68
+1298;Carolina Isabel Ocampo;carolina.ocampo@mailficticio.com;57900000077;Retail;Manizales;"F ";31
+1299;Josefina Victoria Naranjo;josefina.naranjo@mailficticio.com;57900000078;VIP;Medellín;"F ";37
+1300;Karen Andrea Quintero;karen.quintero@mailficticio.com;57900000079;PyME;Cartagena;"F ";65
+1301;Zulema Raquel Valencia;zulema.valencia@mailficticio.com;57900000080;Retail;Manizales;"F ";44
+1302;Marcela Soledad Martinez;marcela.marin@mailficticio.com;57900000081;VIP;Manizales;"F ";28
+1303;Vanessa Julieta Duque;vanessa.duque@mailficticio.com;57900000082;PyME;Cartagena;"F ";46
+1304;Michelle Estefania Pradilla;michelle.pena@mailficticio.com;57900000083;Retail;Manizales;"F ";45
+1305;Susana Lorena Rivera;susana.rivera@mailficticio.com;57900000084;VIP;Manizales;"F ";26
+1306;Florencia Blanco;fatima.blanco@mailficticio.com;57900000085;PyME;Bogotá;"F ";55
+1307;Hortensia Piedad Bravo;hortensia.bravo@mailficticio.com;57900000086;Retail;Bogotá;"F ";74
+1308;Ingrid Daniela Orozco;ingrid.orozco@mailficticio.com;57900000087;VIP;Bogotá;"F ";67
+1309;Jennifer Mora;jennifer.munoz@mailficticio.com;57900000088;PyME;Pereira;"F ";63
+1310;Mario Javier Cuevas;mariojavi@mailficticio.com;57900000089;Retail;Bogotá;"F ";30
+1311;Gonzalo Ramon Florez;gonzalo.flores@mailficticio.com;57900000090;VIP;Bogotá;"M ";51
+1312;Rodrigo Soto;rodrigo.soto@mailficticio.com;57900000091;PyME;Manizales;"M ";75
+1313;Emilio Pardo;emilio.pardo@mailficticio.com;57900000092;Retail;Cali;"M ";74
+1314;"  Manuel Lagos";hector.lagos@mailficticio.com;57900000093;VIP;Manizales;"M ";65
+1315;Arturo David Rojas;arturo.rojas@mailficticio.com;57900000094;PyME;Barranquilla;"M ";51
+1316;"  Camilo Diaz";julian.diaz@mailficticio.com;57900000095;Retail;Manizales;"M ";70
+1317;Oscar Luna;oscar.luna@mailficticio.com;57900000096;VIP;Ibagué;"M ";70
+1318;Ruben Suarez;ruben.suarez@mailficticio.com;57900000097;PyME;Ibagué;"M ";47
+1319;Sergio Nicolas Flores;sergio.gil@mailficticio.com;57900000098;Retail;Manizales;"M ";19
+1320;Mauricio Javier Mesa;mauricio.mesa@mailficticio.com;57900000099;VIP;Ibagué;"M ";51
+1321;Rafael Eduardo Rios;rafael.rios@mailficticio.com;57900000100;PyME;Bogotá;"M ";61
+1322;Jorge Andres Vásquez;jorge.velasquez@mailficticio.com;57900000101;Retail;Barranquilla;"M ";53
+1323;Vicente Alfonso Ochoa;vicente.ochoa@mailficticio.com;57900000102;VIP;Medellín;"M ";66
+1324;Benjamin Fajardo;benjamin.vaca@mailficticio.com;57900000103;PyME;Medellín;"M ";67
+1325;Santiago Tomas Sierra;santiago.sierra@mailficticio.com;57900000104;Retail;Manizales;"M ";29
+1326;Alejandro Andres Pinti;alejandro.pinto@mailficticio.com;57900000105;VIP;Pereira;"M ";60
+1327;Pedro Juan Valencia;pedro.valencia@mailficticio.com;57900000106;PyME;Bogotá;"M ";20
+1328;Esteban Daniel Naranjo;esteban.naranjo@mailficticio.com;57900000107;Retail;Manizales;"M ";45
+1329;"   Ivan Latorre";ivan.latorre@mailficticio.com;57900000108;VIP;Ibagué;"M ";65
+1330;Alfredo Marquez;alfredo.marquez@mailficticio.com;57900000109;PyME;Pereira;"M ";62
+1331;Camilo Ernesto Blanco;camilo.blanco@mailficticio.com;57900000110;Retail;Medellín;"M ";55
+1332;"  Ricardo Moreno";felix.moreno@mailficticio.com;57900000111;VIP;Manizales;"M ";45
+1333;Gustavo Adolfo Castro;gustavo.castro@mailficticio.com;57900000112;PyME;Bogotá;"M ";49
+1334;Lorenzo Manuel Gil;lorenzo.gil@mailficticio.com;57900000113;Retail;Ibagué;"M ";57
+1335;Norberto Duque;norberto.duque@mailficticio.com;57900000114;VIP;Barranquilla;"M ";26
+1336;Ramiro Antonio Tellez;ramiro.tellez@mailficticio.com;57900000115;PyME;Ibagué;"M ";58
+1337;Simon Esteban Pizarro;simon.pizarro@mailficticio.com;57900000116;Retail;Pereira;"M ";57
+1338;Dario Quintero;dario.quintero@mailficticio.com;57900000117;VIP;Bogotá;"M ";39
+1339;Jaime Alonso Marin;jaime.marin@mailficticio.com;57900000118;PyME;Bogotá;"M ";26
+1340;Marco Aurelio Gonzalez;marco.gomez@mailficticio.com;57900000119;Retail;Bogotá;"M ";67
+1341;Ana Ramirez Rodirguez;anitamari@mailficticio.com;57900000120;VIP;Bogotá;"M ";35
+1342;Luis Alberto Moscoso;luismos@micorreo.com;57900000120;VIP;Cali;"M ";61
+1343;Javier Ignacio Torres;javier.torres@mailficticio.com;57900000120;PyME;Bogotá;"M ";36
+1344;Andres Herrera;andres.herrera@mailficticio.com;57900000002;Retail;Bogotá;"M ";69
+1345;Ricardo Vargas;ricardo.vargas@mailficticio.com;57900000003;VIP;Bogotá;"M ";29
+1346;Miguel  Castro;miguel.castro@mailficticio.com;57900000004;PyME;Cartagena;"M ";21
+1347;Fernando Luis Soto;fernando.soto@mailficticio.com;57900000005;Retail;Manizales;"M ";22
+1348;Daniel Esteban Rico;daniel.rico@mailficticio.com;57900000006;VIP;Medellín;"M ";71
+1349;Pablo Emilio Bernal;pablo.bernal@mailficticio.com;57900000007;PyME;Bogotá;"M ";66
+1350;Juan Camilo Rueda;juan.rueda@mailficticio.com;57900000008;Retail;Bucaramanga;"M ";66
+1351;Mario Alberto Cruz;mario.cruz@mailficticio.com;57900000009;VIP;Cúcuta;"M ";73
+1352;Diego Alejandro Gil;diego.gil@mailficticio.com;57900000010;PyME;Cúcuta;"M ";20
+1353;Sebastian Peralta;sebastian.pena@mailficticio.com;57900000011;Retail;Cartagena;"M ";46
+1354;Camila Andrea Rios;camila.rios@mailficticio.com;57900000037;PyME;Bogotá;"F ";67
