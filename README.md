@@ -30,8 +30,12 @@ Antes de ejecutar la aplicación, **es obligatorio** preparar el esquema de la b
 > **Scripts de Base de Datos**:
 > *   **Shared (Modelo Global)**: [Modelo_relacional_empresarial-Electro_Hogar.sql](internal/shared/infrastructure/db/sql/Modelo_relacional_empresarial-Electro_Hogar.sql)
 > *   **Customer Module (Módulo Cliente)**:
->     *   [Pr-insertar_cliente.sql](internal/customer/infrastructure/sql/Pr-insertar_cliente.sql) (requiere especificar `<DB_SCHEMA>`)
->     *   [Pr-insertar_cliente-example.sql](internal/customer/infrastructure/sql/Pr-insertar_cliente-example.sql) (ejemplo documentado con `electro_hogar`)
+>     *   **Procedimientos**:
+>         *   [Pr-insertar_cliente.sql](internal/customer/infrastructure/sql/stored_procedures/Pr-insertar_cliente.sql) (requiere especificar `<DB_SCHEMA>`)
+>         *   [Pr-insertar_cliente-example.sql](internal/customer/infrastructure/sql/stored_procedures/Pr-insertar_cliente-example.sql) (ejemplo con `electro_hogar`)
+>     *   **Vistas**:
+>         *   [Vw-cubo_ventas.sql](internal/customer/infrastructure/sql/views/Vw-cubo_ventas.sql) (requiere especificar `<DB_SCHEMA>`)
+>         *   [Vw-cubo_ventas-example.sql](internal/customer/infrastructure/sql/views/Vw-cubo_ventas-example.sql) (ejemplo con `electro_hogar`)
 >
 > **Permisos de Ejecución**:
 > Para que la aplicación pueda consumir el procedimiento, debes otorgar permisos de ejecución con el siguiente comando:
@@ -78,7 +82,7 @@ La aplicación se configura mediante un archivo de variables de entorno `.dev.en
 *   `internal/customer/domain/`: Reglas de negocio y entidades de cliente.
 *   `internal/customer/application/`: Casos de uso (Orquestación del ETL).
 *   `internal/customer/infrastructure/`: Implementaciones técnicas (SQL Repo, CSV Parser).
-*   `internal/customer/infrastructure/sql/`: Procedimientos almacenados específicos del módulo Cliente.
+*   `internal/customer/infrastructure/sql/`: Guiones SQL segmentados en `stored_procedures/` y `views/`.
 *   `internal/shared/infrastructure/db/`: Configuración global y scripts compartidos de base de datos.
 *   `data/`: Contiene los archivos fuente para el proceso de extracción.
 
