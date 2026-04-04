@@ -1,0 +1,21 @@
+﻿IdProducto;ProductoNombre;Marca;Modelo;Categoria;Subcategoria;Precio
+1;Lavadora Smart 8kg;HogarPlus;LAV-8S;Electrodomésticos;Lavadoras;1600000
+2;Lavadora 10kg;HogarPlus;LAV-10;Electrodomésticos;Lavadoras;2000000
+3;Nevera No Frost 300L;FrioMax;NF300;Electrodomésticos;Refrigeración;2800000
+4;Mini nevera 120L;FrioMax;MN120;Electrodomésticos;Refrigeración;900000
+5;Microondas 25L;CocinaPro;MW25;Electrodomésticos;Cocina;450000
+6;MiniComponente de Sonido;Samsung;MX50;Electrodomésticos;Sonido;800000
+7;Lavavajillas 12c;LimpiaPlus;LD12;Electrodomésticos;Limpieza;1500000
+8;Secadora 7kg;HogarPlus;SD7;Electrodomésticos;Secadoras;1400000
+9;"Televisor 50"" 4K";VisioMax;TV50-4K;Electrodomésticos;TV;2200000
+10;"Televisor 43"" FHD";VisioMax;TV43-FHD;Electrodomésticos;TV;1200000
+11;Aspiradora Robot;CleanBot;RB1;Electrodomésticos;Limpieza;900000
+12;PlayStation 5;Sony;PS5;Electrodomésticos;Videojuegos;3000000
+13;Cafetera Automática;CoffeeX;CA200;Electrodomésticos;Pequeños;500000
+14;Extractor de Jugos;VitalJuice;EJ50;Electrodomésticos;Pequeños;250000
+15;Parrilla Eléctrica;AsaPro;PE40;Electrodomésticos;Cocina;300000
+16;Nintendo Switch;Nintendo;NS10;Electrodomésticos;Videojuegos;1400000
+17;Aire Acondicionado 12000 BTU;ClimaCool;AC12000;Electrodomésticos;Climatización;1300000
+18;Aire Acondicionado 18000 BTU;ClimaCool;AC18000;Electrodomésticos;Climatización;2100000
+19;Congelador 200L;FrioMax;CF200;Electrodomésticos;Refrigeración;1700000
+20;Hidrolavadora;LimpiaPro;HL200;Electrodomésticos;Limpieza;600000
