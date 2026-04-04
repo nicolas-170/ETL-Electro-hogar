@@ -25,6 +25,17 @@ func NewCreateCustomer(repo repository.CustomerRepository, parser repository.CSV
 
 // Execute ejecuta el proceso ETL
 func (u *CreateCustomer) Execute(ctx context.Context) error {
+	// No persistir si ya existen registros
+	count, err := u.repo.Count(ctx)
+	if err != nil {
+		return fmt.Errorf("error en consulta previa de clientes: %w", err)
+	}
+
+	if count > 0 {
+		log.Printf("[!] El proceso ETL de Clientes se saltará: La tabla ya contiene %d registros.\n", count)
+		return nil
+	}
+
 	log.Println("Extrayendo datos del CSV...")
 	customers, err := u.csvParser.Parse()
 	if err != nil {

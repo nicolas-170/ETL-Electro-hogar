@@ -51,3 +51,13 @@ func (r *PostgresTimeRepository) Save(ctx context.Context, t domain.Time) error 
 
 	return nil
 }
+
+func (r *PostgresTimeRepository) Count(ctx context.Context) (int, error) {
+	var count int
+	query := fmt.Sprintf("SELECT COUNT(*) FROM %s.TIEMPO", r.configDb.Schema)
+	err := r.db.QueryRowContext(ctx, query).Scan(&count)
+	if err != nil {
+		return 0, fmt.Errorf("error al contar registros en TIEMPO: %w", err)
+	}
+	return count, nil
+}

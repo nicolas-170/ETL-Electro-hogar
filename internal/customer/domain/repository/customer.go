@@ -9,4 +9,5 @@ import (
 // CustomerRepository define el contrato para persistir datos de clientes
 type CustomerRepository interface {
 	Save(ctx context.Context, customer domain.Customer) error
+	Count(ctx context.Context) (int, error)
 }

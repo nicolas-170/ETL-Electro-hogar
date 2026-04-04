@@ -38,3 +38,13 @@ func (r *PostgresCustomerRepository) Save(ctx context.Context, c domain.Customer
 
 	return nil
 }
+
+func (r *PostgresCustomerRepository) Count(ctx context.Context) (int, error) {
+	var count int
+	query := fmt.Sprintf("SELECT COUNT(*) FROM %s.CLIENTE", r.configDb.Schema)
+	err := r.db.QueryRowContext(ctx, query).Scan(&count)
+	if err != nil {
+		return 0, fmt.Errorf("error al contar registros en CLIENTE: %w", err)
+	}
+	return count, nil
+}

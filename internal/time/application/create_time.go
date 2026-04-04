@@ -24,6 +24,17 @@ func NewCreateTime(repo repository.TimeRepository, parser repository.CSVParser) 
 
 // Execute ejecuta el proceso ETL de Tiempo
 func (u *CreateTime) Execute(ctx context.Context) error {
+	// No persistir si ya existen registros
+	count, err := u.repo.Count(ctx)
+	if err != nil {
+		return fmt.Errorf("error en consulta previa de tiempo: %w", err)
+	}
+
+	if count > 0 {
+		log.Printf("[!] El proceso ETL de Tiempo se saltará: La tabla ya contiene %d registros.\n", count)
+		return nil
+	}
+
 	log.Println("Extrayendo datos del CSV de Tiempo...")
 	times, err := u.csvParser.Parse()
 	if err != nil {

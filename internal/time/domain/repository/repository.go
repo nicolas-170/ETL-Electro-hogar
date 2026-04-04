@@ -8,6 +8,7 @@ import (
 // TimeRepository define las operaciones de persistencia para el módulo de Tiempo
 type TimeRepository interface {
 	Save(ctx context.Context, time domain.Time) error
+	Count(ctx context.Context) (int, error)
 }
 
 // CSVParser define la abstracción para extraer datos desde archivos planos
