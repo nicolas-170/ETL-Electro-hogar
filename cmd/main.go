@@ -9,6 +9,8 @@ import (
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/config"
 	customerInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/customer/infrastructure"
 	timeInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/time/infrastructure"
+	productInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/product/infrastructure"
+	storeInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/store/infrastructure"
 	database "github.com/nicolas-170/ETL-Electro-hogar/internal/shared/infrastructure/db"
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/shared/infrastructure/etl"
 )
@@ -46,6 +48,8 @@ func runETLProcess(ctx context.Context, db *sql.DB, cfg *config.Database) error 
 	// Registro de procesos modulares
 	orchestrator.Register(&customerInfra.CustomerTask{})
 	orchestrator.Register(&timeInfra.TimeTask{})
+	orchestrator.Register(&productInfra.ProductTask{})
+	orchestrator.Register(&storeInfra.StoreTask{})
 
 	// Ejecución de todas las tareas
 	return orchestrator.RunAll(ctx, db, cfg)
