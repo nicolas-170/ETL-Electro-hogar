@@ -25,7 +25,7 @@ COMMENT ON COLUMN CLIENTE.edad        IS 'Edad del cliente expresada en años';
 
 CREATE TABLE TIEMPO (
     id_tiempo      VARCHAR(40)     PRIMARY KEY,
-    fecha          DATE            NOT NULL UNIQUE,
+    fecha          DATE            NOT NULL,
     dia            SMALLINT,
     mes            SMALLINT,
     trimestre      SMALLINT,

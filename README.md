@@ -34,8 +34,8 @@ Antes de ejecutar la aplicación, **es obligatorio** preparar el esquema de la b
 >         *   [Pr-insertar_cliente.sql](internal/customer/infrastructure/sql/stored_procedures/Pr-insertar_cliente.sql) (requiere especificar `<DB_SCHEMA>`)
 >         *   [Pr-insertar_cliente-example.sql](internal/customer/infrastructure/sql/stored_procedures/Pr-insertar_cliente-example.sql) (ejemplo con `electro_hogar`)
 >     *   **Vistas**:
->         *   [Vw-cubo_ventas.sql](internal/customer/infrastructure/sql/views/Vw-cubo_ventas.sql) (requiere especificar `<DB_SCHEMA>`)
->         *   [Vw-cubo_ventas-example.sql](internal/customer/infrastructure/sql/views/Vw-cubo_ventas-example.sql) (ejemplo con `electro_hogar`)
+>         *   [Vw-cubo_ventas.sql](internal/shared/infrastructure/db/sql/views/Vw-cubo_ventas.sql) (requiere especificar `<DB_SCHEMA>`)
+>         *   [Vw-cubo_ventas-example.sql](internal/shared/infrastructure/db/sql/views/Vw-cubo_ventas-example.sql) (ejemplo con `electro_hogar`)
 >
 > **Permisos de Ejecución**:
 > Para que la aplicación pueda consumir el procedimiento, debes otorgar permisos de ejecución con el siguiente comando:
