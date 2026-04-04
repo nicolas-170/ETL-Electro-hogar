@@ -6,7 +6,8 @@ import (
 	"log"
 
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/config"
-	"github.com/nicolas-170/ETL-Electro-hogar/internal/customer/infrastructure"
+	customerInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/customer/infrastructure"
+	timeInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/time/infrastructure"
 	database "github.com/nicolas-170/ETL-Electro-hogar/internal/shared/infrastructure/db"
 )
 
@@ -24,12 +25,20 @@ func main() {
 	}
 	defer db.Close()
 
-	// Ejecutar proceso ETL del modulo Cliente con un contexto
+	// Contexto global con tiempo límite
 	ctx, cancel := context.WithTimeout(context.Background(), *cfg.App.Timeout)
 	defer cancel()
 
-	if err := infrastructure.RunCustomerProcess(ctx, db, &cfg.Database); err != nil {
+	// 1. Ejecutar proceso ETL del modulo Cliente
+	log.Println(">>> Ejecutando ETL de Clientes...")
+	if err := customerInfra.RunCustomerProcess(ctx, db, &cfg.Database); err != nil {
 		log.Fatalf("Falla crítica en el proceso ETL de Clientes: %v", err)
+	}
+
+	// 2. Ejecutar proceso ETL del modulo Tiempo
+	log.Println(">>> Ejecutando ETL de Tiempo...")
+	if err := timeInfra.RunTimeProcess(ctx, db, &cfg.Database); err != nil {
+		log.Fatalf("Falla crítica en el proceso ETL de Tiempo: %v", err)
 	}
 
 	printInfoETL()
