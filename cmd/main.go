@@ -11,6 +11,7 @@ import (
 	timeInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/time/infrastructure"
 	productInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/product/infrastructure"
 	storeInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/store/infrastructure"
+	saleInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/sale/infrastructure"
 	database "github.com/nicolas-170/ETL-Electro-hogar/internal/shared/infrastructure/db"
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/shared/infrastructure/etl"
 )
@@ -50,6 +51,7 @@ func runETLProcess(ctx context.Context, db *sql.DB, cfg *config.Database) error 
 	orchestrator.Register(&timeInfra.TimeTask{})
 	orchestrator.Register(&productInfra.ProductTask{})
 	orchestrator.Register(&storeInfra.StoreTask{})
+	orchestrator.Register(&saleInfra.SaleTask{})
 
 	// Ejecución de todas las tareas
 	return orchestrator.RunAll(ctx, db, cfg)
