@@ -53,9 +53,8 @@ func (u *CreateCustomer) Execute(ctx context.Context) error {
 
 		// Omitir si no hay nombre (datos inválidos en el CSV)
 		if customer.Nombre == "" || customer.Nombre == "NULL" {
-			log.Printf("[-] Saltando cliente ID %s por falta de nombre\n", customer.ID)
-			errorCount++
-			continue
+			customer.Nombre = "Desconocido " + customer.ID
+			log.Printf("[!] Se asigna nombre Desconocido al cliente con ID: %s, nombre: %s\n", customer.ID, customer.Nombre)
 		}
 
 		// --- Carga (L de ETL) ---
