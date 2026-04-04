@@ -10,8 +10,14 @@ import (
 	"github.com/nicolas-170/ETL-Electro-hogar/internal/time/infrastructure/db"
 )
 
-// RunTimeProcess gestiona la inicialización y ejecución del proceso de importación de la dimensión tiempo
-func RunTimeProcess(ctx context.Context, database *sql.DB, cfg *config.Database) error {
+// TimeTask representa la tarea ETL para la dimensión Tiempo
+type TimeTask struct{}
+
+func (t *TimeTask) Name() string {
+	return "Tiempo (Time Dimension)"
+}
+
+func (t *TimeTask) Run(ctx context.Context, database *sql.DB, cfg *config.Database) error {
 	// Ruta al archivo CSV
 	csvPath := "data/Anexo 10- Tiempo - Tarea 3.csv"
 

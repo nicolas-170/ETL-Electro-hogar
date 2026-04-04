@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"database/sql"
 	"fmt"
 	"log"
 
@@ -9,6 +10,7 @@ import (
 	customerInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/customer/infrastructure"
 	timeInfra "github.com/nicolas-170/ETL-Electro-hogar/internal/time/infrastructure"
 	database "github.com/nicolas-170/ETL-Electro-hogar/internal/shared/infrastructure/db"
+	"github.com/nicolas-170/ETL-Electro-hogar/internal/shared/infrastructure/etl"
 )
 
 func main() {
@@ -29,19 +31,24 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), *cfg.App.Timeout)
 	defer cancel()
 
-	// 1. Ejecutar proceso ETL del modulo Cliente
-	log.Println(">>> Ejecutando ETL de Clientes...")
-	if err := customerInfra.RunCustomerProcess(ctx, db, &cfg.Database); err != nil {
-		log.Fatalf("Falla crítica en el proceso ETL de Clientes: %v", err)
-	}
-
-	// 2. Ejecutar proceso ETL del modulo Tiempo
-	log.Println(">>> Ejecutando ETL de Tiempo...")
-	if err := timeInfra.RunTimeProcess(ctx, db, &cfg.Database); err != nil {
-		log.Fatalf("Falla crítica en el proceso ETL de Tiempo: %v", err)
+	// Ejecutar orquestación de procesos ETL
+	if err := runETLProcess(ctx, db, &cfg.Database); err != nil {
+		log.Fatalf("Error crítico en la ejecución del proceso ETL: %v", err)
 	}
 
 	printInfoETL()
+}
+
+// runETLProcess centraliza la ejecución de todos los módulos ETL registrados
+func runETLProcess(ctx context.Context, db *sql.DB, cfg *config.Database) error {
+	orchestrator := etl.NewOrchestrator()
+
+	// Registro de procesos modulares
+	orchestrator.Register(&customerInfra.CustomerTask{})
+	orchestrator.Register(&timeInfra.TimeTask{})
+
+	// Ejecución de todas las tareas
+	return orchestrator.RunAll(ctx, db, cfg)
 }
 
 func printInfoInit() {
