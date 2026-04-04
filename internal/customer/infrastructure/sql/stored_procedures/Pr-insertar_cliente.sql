@@ -2,6 +2,7 @@
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE OR REPLACE PROCEDURE insertar_cliente(
+    p_id_cliente VARCHAR,
     p_nombre     VARCHAR,
     p_email      VARCHAR,
     p_telefono   VARCHAR,
@@ -24,7 +25,7 @@ BEGIN
         edad
     )
     VALUES (
-        CAST(gen_random_uuid() AS VARCHAR), -- Se genera Uuid 
+        p_id_cliente, 
         p_nombre, 
         p_email, 
         p_telefono, 
